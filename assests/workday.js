@@ -1,5 +1,5 @@
 
-var $saveButton = $(".btn");
+//var $saveButton = $(".btn");
 var $currentDay =$("#currentDay");
 var CurrentTime = getCurrentTime()
 $ (document).ready (function(){
@@ -14,7 +14,9 @@ var $planner  =$("#plannerContainer")
       var scheduleData=[
         {
         time:"9AM",
-        description: "gotta do that thing"
+        description: "gotta do that thing",
+      
+        
       },
     
         {
@@ -71,11 +73,12 @@ var $planner  =$("#plannerContainer")
 
       function renderData(){
         //so that we don't have to develop in real time
-        var momentStub= moment("10am", "ha")
+        var momentStub= moment(CurrentTime, "ha")
         console.log(momentStub)
         scheduleData.forEach(events=>{
           console.log(events)
           var row= $("<div class='row time-block'>")
+          
           var eventTime= $(`<div class='hour'>`).text(events.time)
           var localDescription= localStorage.getItem(events.time)
           var eventDesc= $(`<textarea class='dexcription'>`).text(localDescription||events.description)
@@ -92,12 +95,42 @@ var $planner  =$("#plannerContainer")
             eventDesc.addClass("present")
 
           }
+          var buttonDiv =$("<div>");
+          var inputDiv= $("<div>");
+          var button = $("<button>");
+          var input = $("<input>");
           row.append(eventTime, eventDesc)
           $planner.append(row)
-          })
+          //$("#button").click(function(){
+
+
+          });
+
 
           
-      }
+
+        }
+
+
+
+
+
+          //buttonDiv.append(button);
+          //inputDiv.append(input);
+  
       renderData()
-    
-    
+      let $rowDiv= $("<div>");
+      $rowDiv.addClass("row");
+      let $columnSave = $("<div>");
+      $columnSave.addClass("col-md-1");
+    let index = "save-id";
+      let $SaveDiv = $("<div>");
+      $SaveDiv.addClass("col-md-1");
+      let $saveButton = $("<i>");
+      $saveButton.attr("id",`saveid-${index}`);
+      $saveButton.attr("save-id",index);
+      $saveButton.attr("class","far fa-save");
+      $rowDiv.append($columnSave);
+      $columnSave.append($saveButton);
+
+    let $index = $(this).attr("save-id");
