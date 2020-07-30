@@ -9,48 +9,48 @@ var timelist=["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM",]
 var scheduleData=[
   {
     time:"9AM",
-    description: "gotta do that thing",
+    description: "Team Meeting",
     
     
   },
   
   {
         time:"10AM",
-        description: "gotta do that other thing"
+        description: "Client Call"
       },
         {
         time:"11AM",
-        description: "gotta do that 11 thing"
+        description: "Touch Base with Michele"
       },
       
       {
         time:"12PM",
-        description: "gotta do that 11 thing"
+        description: "Lunch"
       },
       
       {
         time:"1PM",
-        description: "gotta do that 11 thing"
+        description: "Client Call"
       },   
       
       {
         time:"2PM",
-        description: "gotta do that 11 thing"
+        description: "Touch Base with AP"
       },
                
       {
         time:"3PM",
-        description: "gotta do that 11 thing"
+        description: "Client Meeting"
       },
           
       {
         time:"4PM",
-        description: "gotta do that 11 thing"
+        description: "Touch Base with legal"
       },
 
       {
         time:"5PM",
-        description: "gotta do that 11 thing"
+        description: "End of Work day"
       },
 
       ]
