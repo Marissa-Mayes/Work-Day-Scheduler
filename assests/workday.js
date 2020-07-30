@@ -91,15 +91,15 @@ var scheduleData=[
             eventDesc.addClass("present")
 
           }
-          let $saveButton = $("<i>");
-      $saveButton.attr("id",`saveid-${events.time}`);
-      $saveButton.attr("save-id",events.time);//data
-      $saveButton.attr("class","far fa-save listener");
+          let saveButton = $("<i>");
+      saveButton.attr("id",`saveid-${events.time}`);
+      saveButton.attr("save-id",events.time);//data
+      saveButton.attr("class","far fa-save listener");
           // var buttonDiv =$("<div>");
           // var inputDiv= $("<div>");
           // var button = $("<button>");
           // var input = $("<input>");
-          row.append(eventTime, eventDesc, $saveButton)
+          row.append(eventTime, eventDesc, saveButton)
           $planner.append(row)
           //$("#button").click(function(){
 

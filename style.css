@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+   
   }
   
   textarea{
@@ -11,6 +12,9 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 15px;
+    text-align: center;
+    position: relative;
+    
    
   }
   
@@ -20,6 +24,7 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    text-align: justify;
   }
   
   .description{
@@ -32,19 +37,20 @@ body {
     border-radius: 15px;
   }
   
-  .row {
+   .row {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid black;
-    text-align: center;
-   
+    text-align: justify;
+ 
     
   }
   
-  .rowtime-block{
+  /*#rowtime-block{
     position: absolute;
     text-align: center;
-  }
+    */
+  
   
   .hour {
     background-color: #ffffff;
@@ -53,15 +59,19 @@ body {
     text-align: center;
   }
   
-  .past {
+  .past{
     background-color: #d3d3d3;
     color: white;
+    text-align: center;
+    width: 95%;
+    
     
   }
   
-  .present {
+  .present{
     background-color: #ff6961;
     color: white;
+    width: 95%;
     
     
   }
@@ -69,19 +79,28 @@ body {
   .future {
     background-color: #77dd77;
     color: white;
+    width: 95%;
     
   }
   
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+  .fa-save.listener {
+    border-left: 50% solid black;
+    border-top-right-radius: 155px;
+    border-bottom-right-radius: 155px;
     background-color: #06AED5;
     color: white;
+    margin-left: 100%;
+    float: left;
   }
   
-  .saveBtn i:hover {
-    font-size: 20px;
+  .saveButton:hover {
+    font-size: 100%;
     transition: all .3s ease-in-out;
+    color: #06AED5;
+    float: left;
+    margin-right: auto;
+    height: max-content;
+
   }
+  
   
